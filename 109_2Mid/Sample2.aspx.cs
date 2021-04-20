@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 namespace _109_2Mid {
     public partial class Sample2 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            if (ddl_Area.Text == "北區")
+            if (ddl_Area.SelectedValue == "北區")
             {
                 ddl_Place.Items.Clear();
                 ddl_Place.Items.Add("基隆");
@@ -23,7 +23,7 @@ namespace _109_2Mid {
                 ddl_Place.Items.Add("南投");
             }
 
-            if (rbl_Res.Text == "是")
+            if (rbl_Res.SelectedValue == "是")
             {
                 tb_Des.Visible = true;
             }
@@ -40,6 +40,16 @@ namespace _109_2Mid {
         }
 
         protected void ddl_Area_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void rbl_Res_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddl_Place_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
