@@ -17,8 +17,10 @@
                     <asp:ListItem>中區</asp:ListItem>
                 </asp:DropDownList>
                 <br />
-                <asp:DropDownList ID="ddl_Place" runat="server" OnSelectedIndexChanged="ddl_Place_SelectedIndexChanged">
+               
+                <asp:DropDownList ID="ddl_Place" runat="server">
                 </asp:DropDownList>
+               
                 <br />
                 <asp:Label ID="Label1" runat="server" Text="姓名"></asp:Label>
                 <asp:TextBox ID="tb_Name" runat="server"></asp:TextBox>
@@ -29,6 +31,8 @@
                     <asp:ListItem Selected="True">否</asp:ListItem>
                     <asp:ListItem>是</asp:ListItem>
                 </asp:RadioButtonList>
+                <br />
+               
                 <asp:TextBox ID="tb_Des" runat="server" Width="400px" Visible="False"></asp:TextBox>
                 <br />
                 <asp:Button ID="btn_Sub" runat="server" OnClick="btn_Sub_Click" Text="送出" />

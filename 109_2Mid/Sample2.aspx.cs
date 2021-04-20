@@ -23,7 +23,7 @@ namespace _109_2Mid {
                 ddl_Place.Items.Add("南投");
             }
 
-            if (rbl_Res.SelectedValue == "是")
+            if (rbl_Res.Text == "是")
             {
                 tb_Des.Visible = true;
             }
@@ -36,22 +36,7 @@ namespace _109_2Mid {
 
         protected void btn_Sub_Click(object sender, EventArgs e)
         {
-            lb_Msg.Text = ddl_Area.Text + "</br>" + ddl_Place.Text + "</br>" + tb_Name.Text + "</br>" + tb_Des.Text;
-        }
-
-        protected void ddl_Area_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void rbl_Res_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void ddl_Place_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            lb_Msg.Text = ddl_Area.Text + "</br>" + ddl_Place.SelectedValue + "</br>" + tb_Name.Text + "</br>" + tb_Des.Text;
         }
     }
 }
