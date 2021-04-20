@@ -26,7 +26,7 @@
                 <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label>
                 <br />
                 <asp:RadioButtonList ID="rbl_Res" runat="server" AutoPostBack="True">
-                    <asp:ListItem>否</asp:ListItem>
+                    <asp:ListItem Selected="True">否</asp:ListItem>
                     <asp:ListItem>是</asp:ListItem>
                 </asp:RadioButtonList>
                 <asp:TextBox ID="tb_Des" runat="server" Width="400px" Visible="False"></asp:TextBox>
